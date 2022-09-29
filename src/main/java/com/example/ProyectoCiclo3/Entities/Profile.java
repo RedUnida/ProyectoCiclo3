@@ -34,14 +34,6 @@ public class Profile {
         this.phone = phone;
     }
 
-    public long getEmployee() {
-        return employee;
-    }
-
-    public void setEmployee(long employee) {
-        this.employee = employee;
-    }
-
     public Date getCreatedat() {
         return createdat;
     }
@@ -68,8 +60,27 @@ public class Profile {
     @Column (name = "phone")
     private String phone;
 
-    @Column (name = "employee")
-    private long employee;
+    public String getEmails() {
+        return emails;
+    }
+
+    public void setEmails(String emails) {
+        this.emails = emails;
+    }
+
+    @Column (name = "email")
+    private String emails;
+
+    public String getPassword() {
+        return password;
+    }
+
+    public void setPassword(String password) {
+        this.password = password;
+    }
+
+    @Column (name = "password")
+    private String password;
 
     @Column (name = "createdat")
     private Date createdat;

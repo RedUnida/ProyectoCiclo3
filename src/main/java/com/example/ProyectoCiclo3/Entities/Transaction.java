@@ -22,10 +22,13 @@ public class Transaction {
     private float amount;
 
 
+    public void setEmployee(Employee employee) {
+        this.employee = employee;
+    }
+
     @ManyToOne
     @JoinColumn(name = "employee_id")
     private Employee employee;
-
 
     @ManyToOne
     @JoinColumn(name = "enterprise_id")

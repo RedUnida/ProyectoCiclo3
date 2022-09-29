@@ -69,7 +69,6 @@ public class EmployeeService {
         }
         Employee existe = valida.get();
         existe.setProfile(data.getProfile());
-        existe.setEmails(data.getEmails());
         existe.setEnterprise(data.getEnterprise());
         existe.setCreatedat(data.getCreatedat());
         existe.setUpdatedAT(data.getUpdatedAT());

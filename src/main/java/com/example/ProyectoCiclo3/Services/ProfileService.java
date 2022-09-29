@@ -53,7 +53,6 @@ public class ProfileService {
         }
         existe.setImage(data.getImage());
         existe.setPhone(data.getPhone());
-        existe.setEmployee(data.getEmployee());
         existe.setCreatedat(data.getCreatedat());
         existe.setUpdatedat(data.getUpdatedat());
 

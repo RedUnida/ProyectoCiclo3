@@ -18,11 +18,9 @@ public class Employee {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private long id;
 
-    @Column (name = "email")
-    private String emails;
-
-    @Column (name = "profile")
-    private long profile;
+    @OneToOne
+    @JoinColumn(name = "profile_id")
+    private Profile profile;
 
     @Column (name = "role")
     private EnumRole role;
@@ -45,19 +43,11 @@ public class Employee {
         this.id = id;
     }
 
-    public String getEmails() {
-        return emails;
-    }
-
-    public void setEmails(String emails) {
-        this.emails = emails;
-    }
-
-    public long getProfile() {
+    public Profile getProfile() {
         return profile;
     }
 
-    public void setProfile(long profile) {
+    public void setProfile(Profile profile) {
         this.profile = profile;
     }
 
